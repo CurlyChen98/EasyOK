@@ -1,12 +1,70 @@
-#first_area{
+@SiderWidth: 300px;
+#sider {
+    width: @SiderWidth;
     height: 100%;
-    background-image: url("../img/bg/blurry/1.jpg");
-    background-size: cover;
-    background-position: 50% 50%;
+    left: -250px;
+    background: #ffffff;
+    z-index: 99;
 }
 
-#first_area>p{
+#first_area {
+    height: 100%;
+    background-image: url("../img/background/blurry/3.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#first_area p {
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+#first_area>.titie {
+    width: 50%;
+    position: relative;
+}
+
+#first_area>.titie>p {
     color: #ffffff;
     font-size: 70px;
-    margin-left: 100px;
+}
+
+#first_area>.titie>.title_cn {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#first_area>.titie>p>a {
+    font-weight: bold; // color: rgb(237, 157, 2);
+    color: rgb(255, 196, 34);
+}
+
+#first_area>.titie>div {
+    color: rgb(221, 221, 221);
+}
+
+#first_area>.titie>div>p {
+    height: 30px;
+    color: rgb(221, 221, 221);
+}
+
+#first_area>.row {
+    width: 15%;
+    font-size: 18px;
+    position: relative;
+}
+
+#first_area>.row>p {
+    height: 35px;
+}
+
+#first_area>.row>p:hover {
+    padding-left: 20px;
+}
+
+#first_area>.row>p>a {
+    color: #ffffff;
 }
