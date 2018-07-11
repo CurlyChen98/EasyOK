@@ -25,13 +25,13 @@ function loadsider() {
             $("#sider").css({
                 left: '0'
             });
-            $(".button_ico").slideToggle();
+            $(".button_ico").stop().slideUp();
         });
         $("#sider").mouseleave(function () {
             $("#sider").css({
                 left: '-250px'
             });
-            $(".button_ico").slideToggle();
+            $(".button_ico").stop().slideDown();
         });
     })
 }

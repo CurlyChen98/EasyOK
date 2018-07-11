@@ -16,7 +16,7 @@ body {
   background: #ffffff;
   z-index: 99;
   position: absolute;
-  transition: 0.7s all ease;
+  transition: all 1s ease;
 }
 .icon {
   width: 1em;
@@ -26,11 +26,14 @@ body {
   overflow: hidden;
 }
 .button_ico {
-  font-size: 35px;
-  padding: 7px;
+  font-size: 30px;
+  padding: 10px;
   padding-top: 0;
   position: absolute;
   right: 0;
   color: #ed9d02;
   cursor: pointer;
+}
+#sider > img {
+  margin-top: 50px;
 }
