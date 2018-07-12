@@ -1,4 +1,4 @@
-let iconfont_src = "//at.alicdn.com/t/font_707735_7yv2zfewto2.js"
+let iconfont_src = "//at.alicdn.com/t/font_707735_zkldynd6m8.js"
 
 $(document).ready(function () {
     loadsider();
@@ -23,13 +23,15 @@ function loadsider() {
     }).then((result) => {
         $(".button_ico").click(function () {
             $("#sider").css({
-                left: '0'
+                left: '0',
+                width: "300px",
             });
             $(".button_ico").stop().slideUp();
         });
         $("#sider").mouseleave(function () {
             $("#sider").css({
-                left: '-250px'
+                left: '-300px',
+                width: "350px",
             });
             $(".button_ico").stop().slideDown();
         });

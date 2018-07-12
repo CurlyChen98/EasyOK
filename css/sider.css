@@ -9,14 +9,18 @@ body {
   height: 100%;
 }
 #sider {
-  width: 300px;
+  width: 350px;
   height: 100%;
   position: fixed;
-  left: -250px;
+  left: -300px;
   background: #ffffff;
   z-index: 99;
   position: absolute;
   transition: all 1s ease;
+<<<<<<< HEAD
+  overflow: hidden;
+=======
+>>>>>>> e7e59825802cc1385efea7033f61d468abaef07d
 }
 .icon {
   width: 1em;
@@ -34,6 +38,50 @@ body {
   color: #ed9d02;
   cursor: pointer;
 }
+<<<<<<< HEAD
+#sider > .sider_detail {
+  margin-right: 50px;
+  transition: all 0.5s;
+  width: 300px;
+}
+#sider > .sider_detail > img {
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+#sider > .sider_detail > ul > li {
+  width: 300px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+}
+#sider > .sider_detail > ul > li:hover {
+  color: #ffc422;
+}
+#sider > .sider_detail > ul > li::after {
+  content: "";
+  position: absolute;
+  transition: all 0.7s;
+  height: 3px;
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  background-color: #ffc422;
+  border-radius: 30px;
+}
+#sider > .sider_detail > ul > li:not(.active):hover::after {
+  width: 300px;
+  left: 0;
+}
+#sider > .sider_detail > ul > .active {
+  color: #ffc422;
+  background-color: rgba(217, 217, 217, 0.3);
+=======
 #sider > img {
   margin-top: 50px;
+>>>>>>> e7e59825802cc1385efea7033f61d468abaef07d
 }

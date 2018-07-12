@@ -2,7 +2,6 @@
 #sider {
     width: @SiderWidth;
     height: 100%;
-    left: -250px;
     background: #ffffff;
     z-index: 99;
 }
@@ -15,6 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 #first_area p {
@@ -23,7 +23,7 @@
 }
 
 #first_area>.titie {
-    width: 50%;
+    width: 45%;
     position: relative;
 }
 
@@ -40,6 +40,7 @@
 #first_area>.titie>p>a {
     font-weight: bold; // color: rgb(237, 157, 2);
     color: rgb(255, 196, 34);
+    letter-spacing:5px;
 }
 
 #first_area>.titie>div {
@@ -51,8 +52,34 @@
     color: rgb(221, 221, 221);
 }
 
+#first_area>.titie>.button {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#first_area>.titie>.button >.button_download {
+    background-color: rgba(237, 159, 2, 0);
+    border-color: rgba(237, 157, 2, 0.819608);
+    border-width: 3px;
+    color: rgba(237, 157, 2, 0.819608);
+    // color: rgba(218, 216, 216, 0.82);
+    padding: 11px 38px;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-right: 25px;
+    border-style: solid;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#first_area>.titie>.button >.button_download:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(237,157,2,1);
+}
+
 #first_area>.row {
-    width: 15%;
+    width: 8%;
     font-size: 18px;
     position: relative;
 }
