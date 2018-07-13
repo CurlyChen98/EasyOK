@@ -59,20 +59,24 @@ body {
     line-height: 60px;
     font-size: 14px;
     font-weight: bold;
-    color: #999;
-    cursor: pointer;
     transition: all 0.2s;
     position: relative;
 }
 
-#sider>.sider_detail>ul>li:hover {
+#sider>.sider_detail>ul>li>a {
+    color: rgb(141, 140, 140);
+    text-decoration:none;
+    padding: 30px;
+}
+
+#sider>.sider_detail>ul>li>a:hover {
     color: #ffc422;
 }
 
 #sider>.sider_detail>ul>li::after {
     content: "";
     position: absolute;
-    transition: all 0.7s;
+    transition: all 1s;
     height: 3px;
     width: 0;
     left: 50%;

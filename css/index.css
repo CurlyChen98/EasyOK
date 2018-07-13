@@ -13,6 +13,7 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  padding-left: 50px;
 }
 #first_area p {
   cursor: pointer;
@@ -65,7 +66,7 @@
   background-color: #ed9d02;
 }
 #first_area > .row {
-  width: 8%;
+  width: 120px;
   font-size: 18px;
   position: relative;
 }
@@ -77,4 +78,62 @@
 }
 #first_area > .row > p > a {
   color: #ffffff;
+}
+@media screen and (max-width: 1000px) {
+  #first_area {
+    flex-direction: column;
+  }
+  #first_area > .titie {
+    width: 100%;
+    text-align: center;
+  }
+  #first_area > .titie > .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  #first_area > .row {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  #first_area > .row > p {
+    width: 120px;
+  }
+  #first_area > .row > p:hover {
+    padding-left: 0;
+  }
+  #first_area > .row > p:hover > a {
+    color: #d8d7d7;
+  }
+}
+@media screen and (max-width: 550px) {
+  #first_area > .titie > p {
+    font-size: 40px;
+  }
+  #first_area > .titie > .title_cn {
+    font-size: 27px;
+  }
+  #first_area > .row > p {
+    font-size: 16px;
+    height: 27px;
+  }
+  #first_area > .row {
+    margin-top: 20px;
+    width: 120px;
+  }
+  #first_area > .titie > .button {
+    flex-direction: column;
+    height: 110px;
+    justify-content: space-between;
+  }
+  #sider {
+    background-color: #ffffff;
+  }
 }
