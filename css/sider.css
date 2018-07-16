@@ -8,16 +8,10 @@ html,
 body {
   height: 100%;
 }
-#sider {
-  width: 350px;
-  height: 100%;
-  position: fixed;
-  left: -300px;
-  background: #ffffff;
-  z-index: 99;
-  position: absolute;
-  transition: all 1s ease;
-  overflow: hidden;
+body {
+  background-image: url("../img/background/blurry/3.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 .icon {
   width: 1em;
@@ -26,57 +20,9 @@ body {
   fill: currentColor;
   overflow: hidden;
 }
-.button_ico {
-  font-size: 30px;
-  padding: 10px;
-  padding-top: 0;
+#sider {
   position: absolute;
-  right: 0;
-  color: #ed9d02;
-  cursor: pointer;
-}
-#sider > .sider_detail {
-  margin-right: 50px;
-  transition: all 0.5s;
-  width: 300px;
-}
-#sider > .sider_detail > img {
-  margin-top: 50px;
-  margin-bottom: 35px;
-}
-#sider > .sider_detail > ul > li {
-  width: 300px;
-  text-align: center;
-  line-height: 60px;
-  font-size: 14px;
-  font-weight: bold;
-  transition: all 0.2s;
-  position: relative;
-}
-#sider > .sider_detail > ul > li > a {
-  color: #8d8c8c;
-  text-decoration: none;
-  padding: 30px;
-}
-#sider > .sider_detail > ul > li > a:hover {
-  color: #ffc422;
-}
-#sider > .sider_detail > ul > li::after {
-  content: "";
-  position: absolute;
-  transition: all 1s;
-  height: 3px;
-  width: 0;
-  left: 50%;
-  bottom: 0;
-  background-color: #ffc422;
-  border-radius: 30px;
-}
-#sider > .sider_detail > ul > li:not(.active):hover::after {
-  width: 300px;
-  left: 0;
-}
-#sider > .sider_detail > ul > .active {
-  color: #ffc422;
-  background-color: rgba(217, 217, 217, 0.3);
+  width: 50px;
+  height: 100%;
+  background-color: #f2f2f2 ;
 }

@@ -1,19 +1,9 @@
-#sider {
-  width: 300px;
-  height: 100%;
-  background: #ffffff;
-  z-index: 99;
-}
 #first_area {
   height: 100%;
-  background-image: url("../img/background/blurry/3.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding-left: 50px;
 }
 #first_area p {
   cursor: pointer;

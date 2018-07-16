@@ -21,19 +21,6 @@ function loadsider() {
             $("#sider").html(response);
         }
     }).then((result) => {
-        $(".button_ico").click(function () {
-            $("#sider").css({
-                left: '0',
-                width: "300px",
-            });
-            $(".button_ico").stop().slideUp();
-        });
-        $("#sider").mouseleave(function () {
-            $("#sider").css({
-                left: '-300px',
-                width: "350px",
-            });
-            $(".button_ico").stop().slideDown();
-        });
+        
     })
 }
