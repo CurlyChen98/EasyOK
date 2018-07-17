@@ -1,4 +1,4 @@
-let iconfont_src = "//at.alicdn.com/t/font_707735_zkldynd6m8.js"
+let iconfont_src = "//at.alicdn.com/t/font_707735_mnz06sq847k.js"
 
 $(document).ready(function () {
     loadsider();
@@ -21,6 +21,23 @@ function loadsider() {
             $("#sider").html(response);
         }
     }).then((result) => {
-        
+        $("#sider>ul>li").mouseenter(function (e) {
+            $(e.target).find("span").stop().animate({
+                width: '150px',
+                opacity: '1',
+            },300)
+        });
+        $("#sider>ul>li").mouseleave (function (e) {
+            $(e.target).find("span").stop().animate({
+                width: '0',
+                opacity: '0',
+            },300)
+        });
+        $("#sider>ul>li>span").mouseleave (function (e) {
+            $(e.target).stop().animate({
+                width: '0',
+                opacity: '0',
+            },300)
+        });
     })
 }
