@@ -21,20 +21,14 @@ function loadsider() {
             $("#sider").html(response);
         }
     }).then((result) => {
-        $("#sider>ul>li").mouseenter(function (e) {
+        $("#sider>ul>li>.all").mouseenter(function (e) {
             $(e.target).find("span").stop().animate({
                 width: '150px',
                 opacity: '1',
             },300)
         });
-        $("#sider>ul>li").mouseleave (function (e) {
+        $("#sider>ul>li>.all").mouseleave (function (e) {
             $(e.target).find("span").stop().animate({
-                width: '0',
-                opacity: '0',
-            },300)
-        });
-        $("#sider>ul>li>span").mouseleave (function (e) {
-            $(e.target).stop().animate({
                 width: '0',
                 opacity: '0',
             },300)
